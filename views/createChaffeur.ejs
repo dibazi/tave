@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Styles -->
+
+        <!-- Scripts -->
+        <title><%= title %></title>
+    </head>
+
+  <html class="h-full bg-gray-100">
+  <body class="h-full">
+
+<div class="min-h-full">
+  <%- include('NavBar') %>
+      
+  
+    <header class="bg-white shadow">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">Add Driver</h1>
+      </div>
+    </header>
+    <main>
+
+        <div>
+            <div class="max-w-4xl mx-auto py-10 sm:px-6 lg:px-8">
+                <div class="mt-5 md:mt-0 md:col-span-2">
+                  <form method="post" action="/createChauffeur">
+                        <div class="shadow overflow-hidden sm:rounded-md">
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="name" class="block font-medium text-sm text-gray-700">Driver name</label>
+                                <input type="text" name="name" id="name" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+    
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="surname" class="block font-medium text-sm text-gray-700">Driver surname</label>
+                                <input type="text" name="surname" id="surname" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+    
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="middle_name" class="block font-medium text-sm text-gray-700">Driver middle name</label>
+                                <input type="text" name="middle_name" id="middle_name" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+    
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="email" class="block font-medium text-sm text-gray-700">Driver email</label>
+                                <input type="email" id="email" name="email" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="address" class="block font-medium text-sm text-gray-700">Driver address</label>
+                                <input type="text" name="address" id="address" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                              <label for="address" class="block font-medium text-sm text-gray-700">Driver license n*</label>
+                              <input type="text" name="driver_license" id="driver_license" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                          </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="cellphone" class="block font-medium text-sm text-gray-700">Driver cellphone</label>
+                                <input type="tel" id="cellphone" name="cellphone" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="car_maker" class="block font-medium text-sm text-gray-700">Car maker</label>
+                                <input type="text" id="car_maker" name="car_maker" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="car_model" class="block font-medium text-sm text-gray-700">Car model</label>
+                                <input type="text" id="car_model" name="car_model" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="car_color" class="block font-medium text-sm text-gray-700">Car color</label>
+                                <input type="text" id="car_color" name="car_color" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="name" class="block font-medium text-sm text-gray-700">car registration</label>
+                                <input type="text" id="car_registration
+                                " name="car_registration
+                                " class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">
+                            </div>
+
+                            <div class="px-4 py-5 bg-white sm:p-6">
+                                <label for="picture" class="block font-medium text-sm text-gray-700">Driver picture</label>
+                                <input type="file" id="picture" name="picture" class="border-b py-1 focus:outline-none focus:border-purple-600 focus:border-b-2 transition-colors peer w-full" autocomplete="off">                            </div>
+
+                            <div class="flex items-center justify-end px-4 py-3 bg-gray-50 text-right sm:px-6">
+                                <button class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150">
+                                    Create
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+  </div>
+
+      <!-- Tailwind CSS (place at the end of the body for faster loading) -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/postcss7-compat@2.2.19/dist/tailwind.min.js"></script>
+      <!-- Your custom JavaScript for mobile menu interaction -->
+      <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+  
+    </body>
+</html>
